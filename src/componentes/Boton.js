@@ -10,7 +10,8 @@ function Boton(props){
     };
     
     return(
-        <div className={`contenedor-boton ${esOperador(props.children) ? "operador":null}`.trimEnd()}>
+        <div className={`contenedor-boton ${esOperador(props.children) ? "operador":null}`.trimEnd()}
+        onClick={()=> props.alClickear(props.children)}>
             {props.children}
         </div>
     );
