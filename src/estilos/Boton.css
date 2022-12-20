@@ -1,0 +1,50 @@
+.contenedor-boton{
+    height: 3rem;
+    /* width: 3rem; */
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #3b3a3a;
+    color: #ff6f0f;
+    border-radius: 1rem;
+    border: 2px solid #000000;
+    margin: 0.3rem;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 1.2px 1.2px #000000; 
+}
+
+.operador{
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #dbdbd8;
+    color: #000000;
+    border-radius: 1rem;
+    border: 2px solid #000000;
+    margin: 0.3rem;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 1.2px 1.2px #353434; 
+}
+
+.contenedor-boton:hover{
+    background-color: #464545;
+    color: #ff5b0f;
+    box-shadow: 0.5px 0.5px #000000; 
+}
+
+.operador:hover{
+    background-color: #ebe9e9;
+    color: #000000; 
+    box-shadow: 0.5px 0.5px #000000; 
+}
+
+
+/* .BtnAllClear{
+    background-color: #ff1476;
+} */
+
+/* 4:30:54 */
