@@ -7,6 +7,7 @@ import BotonOperadorBasico from './componentes/BotonOperadorBasico';
 import {useState} from 'react';
 import {evaluate} from "mathjs";
 
+
 function App() {
 
   const [input, setInput] = useState("");
@@ -21,21 +22,16 @@ function App() {
     }
   };
 
-
   return (
     <div className="App">
-
-      {/* Encabezado */}
+        {/* Encabezado */}
         {/* <div className='contenedor-encabezado'>
-          <h2>
-            Codo a Codo, comisión 22802
-          </h2>
+          <h1>
+            Calculadora React - Curso Codo a Codo
+          </h1>
           <h3>
-            Proyecto: calculadora científica en React
+            Alumno: Nicolás Mavit. Año: 2022, comisión 22802
           </h3>
-          <h5>
-            Alumno: Nicolás Mavit. Año: 2022
-          </h5>
         </div> */}
 
         {/* Calculadora */}
@@ -44,7 +40,7 @@ function App() {
           <div className="fila">
             <Boton alClickear={agregarInput}>(</Boton>
             <Boton alClickear={agregarInput}>)</Boton>
-            <Boton alClickear={agregarInput}>x!</Boton>
+            <Boton alClickear={()=> setInput(`${input}!`)}>x!</Boton>
             <Boton alClickear={()=> setInput(`${input}^2`)}>x²</Boton>
             <Boton alClickear={()=> setInput(`${input}sqrt(`)}>√</Boton>
             <Boton alClickear={agregarInput}>n√</Boton>
@@ -79,7 +75,7 @@ function App() {
             <Boton alClickear={agregarInput}>9</Boton>
             <BotonOperadorBasico alClickear={agregarInput}>-</BotonOperadorBasico>
             <BotonClear alClickearClear={()=> setInput("")}>AC</BotonClear>
-            <Boton alClickear={()=> setInput(`${input.lastIndexOf()}`)}>MR</Boton>
+            <Boton alClickear={agregarInput}>MR</Boton>  
           </div>
           <div className="fila">
             <Boton alClickear={agregarInput}>.</Boton>
@@ -89,10 +85,10 @@ function App() {
             <BotonEqual alClickear={calcularResultado}>=</BotonEqual>
           </div>
         </div>
-
-
     </div>
   );
 }
+
+
 
 export default App;

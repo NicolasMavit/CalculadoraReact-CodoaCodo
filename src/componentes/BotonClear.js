@@ -10,6 +10,6 @@ const BotonClear = (props)=>(
 );
 
 
-// Le agregamos el input directamente en su botón de App.js
+// Le agregué el input directamente en su botón de App.js
 
 export default BotonClear;

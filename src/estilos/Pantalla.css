@@ -5,7 +5,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Digital-7 Italic', sans-serif;
     background-color: #686e1f48;
     color: #000000;
     padding: 1rem;

@@ -16,12 +16,3 @@ const BotonEqual = (props)=>(
 
 export default BotonEqual;
 
-
-
-
-
-// const BotonEqual = (props)=>(
-//     <div className="Boton-equal">
-//         {props.children}
-//     </div>
-// );
