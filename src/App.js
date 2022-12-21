@@ -4,7 +4,7 @@ import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
 import BotonEqual from './componentes/BotonEqual';
 import BotonOperadorBasico from './componentes/BotonOperadorBasico';
-import { useState } from 'react';
+import {useState} from 'react';
 import {evaluate} from "mathjs";
 
 function App() {
@@ -13,20 +13,20 @@ function App() {
 
   const agregarInput = val =>{
     setInput(input + val);
-  }
+  };
 
   const calcularResultado =()=>{
     if (input){
       setInput(evaluate(input));
     }
-    
-  }
+  };
+
 
   return (
     <div className="App">
 
-      {/* Encabezado
-        <div className='contenedor-encabezado'>
+      {/* Encabezado */}
+        {/* <div className='contenedor-encabezado'>
           <h2>
             Codo a Codo, comisión 22802
           </h2>
@@ -45,17 +45,17 @@ function App() {
             <Boton alClickear={agregarInput}>(</Boton>
             <Boton alClickear={agregarInput}>)</Boton>
             <Boton alClickear={agregarInput}>x!</Boton>
-            <Boton alClickear={agregarInput}>x²</Boton>
-            <Boton alClickear={agregarInput}>√</Boton>
+            <Boton alClickear={()=> setInput(`${input}^2`)}>x²</Boton>
+            <Boton alClickear={()=> setInput(`${input}sqrt(`)}>√</Boton>
             <Boton alClickear={agregarInput}>n√</Boton>
           </div>
           <div className="fila">
-            <Boton alClickear={agregarInput}>sin</Boton>
-            <Boton alClickear={agregarInput}>cos</Boton>
-            <Boton alClickear={agregarInput}>tg</Boton>
-            <Boton alClickear={agregarInput}>x³</Boton>
-            <Boton alClickear={agregarInput}>³√</Boton>
-            <Boton alClickear={agregarInput}>xⁿ</Boton>
+            <Boton alClickear={()=> setInput(`${input}sin(`)}>sin</Boton>
+            <Boton alClickear={()=> setInput(`${input}cos(`)}>cos</Boton>
+            <Boton alClickear={()=> setInput(`${input}tan(`)}>tan</Boton>
+            <Boton alClickear={()=> setInput(`${input}^3`)}>x³</Boton> 
+            <Boton alClickear={()=> setInput(`${input}cbrt(`)}>³√</Boton>
+            <Boton alClickear={()=> setInput(`${input}^`)}>xⁿ</Boton>
           </div>
           <div className="fila">
             <Boton alClickear={agregarInput}>1</Boton>
@@ -70,7 +70,7 @@ function App() {
             <Boton alClickear={agregarInput}>5</Boton>
             <Boton alClickear={agregarInput}>6</Boton>
             <BotonOperadorBasico alClickear={agregarInput}>*</BotonOperadorBasico>
-            <Boton alClickear={agregarInput}>log</Boton>
+            <Boton alClickear={()=> setInput(`${input}log(`)}>log</Boton>
             <Boton alClickear={agregarInput}>e</Boton>
           </div>
           <div className="fila">
@@ -79,12 +79,12 @@ function App() {
             <Boton alClickear={agregarInput}>9</Boton>
             <BotonOperadorBasico alClickear={agregarInput}>-</BotonOperadorBasico>
             <BotonClear alClickearClear={()=> setInput("")}>AC</BotonClear>
-            <Boton alClickear={agregarInput}>MR</Boton>
+            <Boton alClickear={()=> setInput(`${input.lastIndexOf()}`)}>MR</Boton>
           </div>
           <div className="fila">
             <Boton alClickear={agregarInput}>.</Boton>
             <Boton alClickear={agregarInput}>0</Boton>
-            <Boton alClickear={agregarInput}>π</Boton>
+            <Boton alClickear={()=> setInput(`${input}pi`)}>π</Boton>
             <BotonOperadorBasico alClickear={agregarInput}>+</BotonOperadorBasico>
             <BotonEqual alClickear={calcularResultado}>=</BotonEqual>
           </div>

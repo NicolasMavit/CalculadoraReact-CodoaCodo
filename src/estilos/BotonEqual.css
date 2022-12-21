@@ -23,3 +23,6 @@
     box-shadow: 0.5px 0.5px #000000; 
 }
 
+.Boton-equal:active{
+    margin-bottom: 0.1rem;
+}

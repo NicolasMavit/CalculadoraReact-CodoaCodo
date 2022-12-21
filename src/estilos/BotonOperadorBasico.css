@@ -21,3 +21,8 @@
     color: #000000; 
     box-shadow: 0.5px 0.5px #000000; 
 }
+
+
+.contenedor-operador-basico:active{
+    margin-bottom: 0.1rem;
+}
