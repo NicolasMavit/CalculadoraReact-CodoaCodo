@@ -89,6 +89,7 @@ function App() {
   );
 }
 
-
+// val = val.substring(0, val.length - 1)
+// setVal(val.slice(0,-1) con un useState para definir los valores
 
 export default App;
