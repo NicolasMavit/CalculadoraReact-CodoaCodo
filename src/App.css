@@ -1,6 +1,5 @@
 .App{
   height: 100vh;
-  padding-top: 1rem;
   background-color: #ffe600b0;
   font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
@@ -9,13 +8,13 @@
   align-items: center;
 }
 
-.contenedor-encabezado{
+/* .contenedor-encabezado{
   padding: 0rem 1rem;
   border-radius: 1.5rem;
   border: 2px solid #000000af;
   margin: 2rem;
   font-family: 'Digital-7 Italic', sans-serif;
-}
+} */
 
 .contenedor-calculadora{
   padding: 1.5rem;
@@ -24,7 +23,8 @@
   border: 2px solid #000000af;
   border-radius: 1rem;
   width: 400px;
-  height: 425px;
+  min-height: 425px;
+  height: fit-content;
   box-shadow: 1px 1px 1px 1.5px #363636;
 }
 

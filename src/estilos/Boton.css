@@ -1,6 +1,6 @@
 .contenedor-boton{
     height: 3rem;
-    /* width: 3rem; */
+    min-width: 2rem;
     display: flex;
     flex: 1 1;
     justify-content: center;
